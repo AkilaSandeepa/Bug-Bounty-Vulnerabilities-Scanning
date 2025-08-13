@@ -74,16 +74,17 @@ Add screenshots from the PDF into `assets/images/` and write detailed reports in
 
 ---
 
-## 🧭 Workflow (Mermaid)
+## 🧭 Workflow
 ```mermaid
-flowchart LR
-A[Program Scope Read] --> B[Recon & Asset Inventory]
-B --> C[Automated Scans (ZAP/Nikto)]
-C --> D[Manual Verification]
-D --> E[Evidence Capture (images)]
-E --> F[Report Writeup]
-F --> G[Responsible Disclosure]
-G --> H[Fix & Retest]
+flowchart TD
+    A[Read Program Scope] --> B[Recon & Asset Inventory]
+    B --> C[Automated Scans: OWASP ZAP & Nikto]
+    C --> D[Manual Verification]
+    D --> E[Capture Evidence: Screenshots]
+    E --> F[Write Report]
+    F --> G[Submit via Responsible Disclosure]
+    G --> H[Fix Applied by Target]
+    H --> I[Retest & Close]
 ```
 
 ---
